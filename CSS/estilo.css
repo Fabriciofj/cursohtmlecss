@@ -1,11 +1,11 @@
 body {
-    background: #e3dada;  
+    background-size: auto 100vh;
     font-family: new roman;
-        height:100vh;
+    height: 100vh;
   }
-  
+
   .menu {
-    background-color: #252323;  
+    background-color: #e3dada;  
   }
   
   .menu ul {
@@ -20,7 +20,7 @@ body {
   
   a {
     text-decoration: none; 
-    color: #e3dada;
+    color: #252323;
   }
   
   a:hover {
@@ -30,6 +30,6 @@ body {
   
   .site-title,
   .site-subtitle {
-    color: #252323;
+    color: #e3dada;
     text-align: center; 
   }
