@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/fundo3.jpg');
+  background-size: auto 100vh;
+  font-family: 'Times New Roman';
+  height: 100vh;
+  font-size: 12px;
+}
+
+/*se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-width: 400px) {
+body {
+  font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 20px;
+    }
+  }
+
+header {
+height: 50vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.menu {
+  background-color: #e3dada;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  padding: 10px 20px;
+  display: block;
+}
+
+a {
+  color:#252323;
+  text-decoration: none;
+}
+a.houver {
+  text-decoration: underline;
+  color: rgb(219, 31, 31);
+}
+
+.site-title,
+.site-subtitle {
+  color: #252323;
+  text-align: center;
+}
+.site-title {
+  font-size: 4em;
+}
+
+.site-subtitle {
+  font-family:'Times New Roman';
+  font-weight: lighter;
+  text-align: center;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+}
