@@ -7,7 +7,7 @@
 body {
   background-image: url('../img/fundo3.jpg');
   background-size: auto 100vh;
-  font-family: 'Times New Roman';
+  font-family: 'Source Code Pro', monospace;
   height: 100vh;
   font-size: 12px;
 }
@@ -69,15 +69,61 @@ a.houver {
 }
 .site-title {
   font-size: 4em;
+  font-family: 'Courgette', cursive;
+}
+
+section.portfolio {
+  padding: 2em;
+  margin-bottom: 2em;
+  color: #252323
 }
 
 .site-subtitle {
-  font-family:'Times New Roman';
+  font-family: 'Playfair Display', serif;
   font-weight: lighter;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1em;
+  font-size: 2em;
+}  
+
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width:560px) {
+ .portfolio .grid {
+   grid-template-columns: 240px 240px;
+ }
+}
+
+@media (min-width:880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3,240px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 4em - 53px - 2em);
+  }
+}
+
+@media (min-width:1150px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(4,290px);
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.portfolio figure {
   text-align: center;
 }
 
 .img-portfolio {
   height: 180px;
-  width: 180px;
+  width: 240px;
+  object-fit: cover;
 }
