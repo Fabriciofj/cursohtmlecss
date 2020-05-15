@@ -91,11 +91,20 @@ a.houver {
   font-family: 'Courgette', cursive;
 }
 
+.sobre,
 .contato,
-section.portfolio {
+.section.portfolio {
   padding: 2em;
   margin-bottom: 2em;
-  color: #252323
+  color: #252323;
+}
+
+@media (min-width:1200px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
 }
 
 .site-subtitle {
@@ -104,12 +113,29 @@ section.portfolio {
   text-align: center;
 }
 
+.sobre h2,
 /*.contato h2,*/
 .portfolio h2 {
   font-family: 'Playfair Display', serif;
   margin-bottom: 1em;
   font-size: 2em;
-}  
+} 
+ 
+.sobre p {
+  color: #252323;
+  margin-bottom: 1.4em;
+  text-align: justify;
+  text-indent: 1.4em;
+} 
+
+.sobre .avatar img {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.sobre .avatar {
+  float: right;
+  margin-left: 2em;
+}
 
 .portfolio .grid {
   display: grid;
@@ -145,14 +171,46 @@ section.portfolio {
 
 .img-portfolio {
   height: 180px;
-  width: 240px;
+  width: 100%;
   object-fit: cover;
   transition: transform 500ms;
 }
 
-.img-portfolio:hover {
+/*.img-portfolio:hover {
   transform: scale(1.2);
+}*/
+
+.flip-card {
+  perspective: 500px;
+
 }
+
+.card{
+position: relative;
+transform-style: preserve-3d;
+transition: transform 1s;
+}
+
+.flip-card:hover  .card {
+  transform: rotateY(180deg);
+}
+
+.card-frente,
+.card-tras {
+  position: absolute;
+  top:0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.card-tras{
+  background-color: #e3dada;
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
+
 
 /*deixar itens alinhados no centro da tela*/
 .contato /*.icons*/ {

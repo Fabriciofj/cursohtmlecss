@@ -12,7 +12,7 @@
 <body>
 	<header>
 		<nav class="menu">
-			<ul>
+			<ul class="container">
 				<li><a href="#sobre">Sobre</a></li>
 				<li><a href="#portfolio">Projetos</a></li>
 				<li><a href="#contato">Contato</a></li>
@@ -23,28 +23,63 @@
 			<h2 class="site-subtitle">Em construção . . .</h2>
 		</div>
 	</header>
-	<section class="portfolio" id="portfolio">
+	<section class="sobre container">
+		<h2>Sobre</h2>
+
+        <figure class="avatar">
+		   <img src="" alt="">
+		</figure>
+		<p>
+	       Lorem ipsum dolor sit amet consectetur adipisicing elit.
+	       Unde, saepe quis vero aspernatur consectetur labore at vel dignissimos in beatae. 
+	       Veniam maiores dolore, laborum eveniet facere voluptatibus harum maxime quisquam.Nihil, id quae. 
+	       Voluptates cum, perspiciatis minus voluptatum, natus similique cumque asperiores culpa exercitationem quaerat, officiis qui eveniet fugit odit id deleniti. Expedita aspernatur suscipit quas, fugiat sint qui optio?
+	    </p>
+	  
+	</section>
+	<section class="portfolio container" id="portfolio">
 	   <h2>Projetos</h2>
 		 <div class="grid">
-		   <figure>
-			<img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-			<figcaption>eCommerce</figcaption>
-		   </figure>
-		   <figure>
-			<img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-			<figcaption>Mobile</figcaption>
-		   </figure>
+
+		 <div class="flip-card">
+		   	<div class="card">
+
+			 <figure class="card-frente">
+			  <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
+			  <figcaption>eCommerce</figcaption>
+		     </figure>
+		     <div class="card-tras">
+			   eCommerce
+		     </div>
+			</div>
+		
+		 </div>
+		 <div class="flip-card">
+			<div class="card">
+
+				<figure class="card-frente">
+					<img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+					<figcaption>Mobile</figcaption>
+			    </figure>
+				<div class="card-tras">
+				  Mobile
+				</div>
+			</div>
+		 </div>
+
 		   <figure>
 			<img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
 			<figcaption>Web design</figcaption>
 		   </figure>
+
 		   <figure>
 			<img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
 			<figcaption>Projetos pessoais</figcaption>
 		   </figure>
+
 	     </div>
 	</section>
-	<section class="contato" id="contato">
+	<section class="contato container" id="contato">
 		<h2>Contato</h2>
 		  <div class="grid icons">
 		  <a target="_blank" href="https://github.com/Fabriciofj">
